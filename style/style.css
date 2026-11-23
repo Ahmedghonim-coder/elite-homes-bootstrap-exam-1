@@ -1,0 +1,538 @@
+/* *global style */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #7C3AED;
+    --hover-color: #8100DC;
+    --background-color: rgb(249, 240, 255);
+}
+
+body {
+    font-family: "Exo", sans-serif;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container,
+.container-fluid,
+.row,
+.card,
+.card-body,
+.tab-content,
+.info-panel,
+.form-card {
+    min-width: 0;
+}
+
+.text-w {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* _______________________------------- */
+/** nav start  */
+.navbar {
+    max-width: 100%;
+}
+
+.navbar .container-fluid {
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    max-width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+/** nav end  */
+/* _______________________-------------- */
+/** header start  */
+header {
+    background-image:
+        linear-gradient(rgba(98, 29, 91, 0.7), rgba(98, 29, 91, 0.7)), url(../images/4a713135fa-60a8ac99fc66b07ce395.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: auto;
+}
+
+.text-w {
+    width: 700px;
+}
+
+.btn {
+    background-color: var(--main-color);
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+h3 {
+    font-size: large;
+}
+
+/** header end  */
+/* --------------_____________ */
+/* *properties section start */
+.one {
+    background-color: var(--background-color);
+}
+
+.premium {
+    color: #3b1fd6;
+    box-shadow: 1px 1px 7px 1px gray;
+    letter-spacing: .1em;
+    font-size: .85rem;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3b1fd6);
+}
+
+.line.flip {
+    transform: scaleX(-1);
+}
+
+.featured {
+    background: linear-gradient(90deg, #5a00e0 35%, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-group {
+    flex-wrap: wrap;
+}
+
+.card-group .card {
+    min-width: 0;
+}
+
+.card-top-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.row-flex {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+}
+
+.row-flex h5 {
+    margin: 0;
+}
+
+.card-content span {
+    overflow-wrap: anywhere;
+}
+
+.post-content {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.post-content .btn {
+    margin-left: 0;
+}
+
+.post-content button {
+    margin-left: 0;
+}
+
+/* *cards start */
+.btn button {
+    color: var(--main-color);
+    display: inline-block;
+    margin-left: 0;
+}
+
+.card .f-span {
+    background-color: var(--main-color);
+}
+
+.card-top-img {
+    object-fit: cover;
+    width: 500px;
+
+}
+
+.card-top-img:hover {
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.view-btn {
+    background-color: var(--main-color);
+}
+
+.view-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* *cards end */
+/* *properties section end */
+/* ----------------------_________________ */
+/* *services section start */
+.icon {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.icon i {
+    padding: 15px;
+}
+
+/* &home */
+.inner-2 img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.inner-2 .num {
+    bottom: -25px;
+    left: -10px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.feature-icon {
+    color: var(--main-color);
+}
+
+.num span {
+    color: var(--main-color);
+}
+
+.nav-tabs .nav-link {
+    color: gray;
+}
+
+.icon {
+    background-color: #EDE9FE;
+    padding-right: 15px;
+    color: var(--main-color);
+}
+
+/* &selling */
+.selling-section .feature-icon {
+    color: #00A63E;
+}
+
+.selling-section .num span {
+    color: #00A63E;
+}
+
+.selling-section .icon {
+    background-color: #DBFCE7;
+    padding-right: 15px;
+    color: #00a63e;
+}
+
+.selling-section .btn {
+    background-color: #00a63e;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.selling-section .inner-2 .num {
+    bottom: -25px;
+    left: 500px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.selling-section .btn-main:hover {
+    background-color: #008236;
+}
+
+/* &renting */
+.rent-section .feature-icon {
+    color: #9810FA;
+}
+
+.rent-section .num span {
+    color: #9810FA;
+}
+
+.rent-section .icon {
+    background-color: #F3E8FF;
+    padding-right: 15px;
+    color: #9810FA;
+}
+
+.rent-section .btn {
+    background-color: #9810FA;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.rent-section .btn-main:hover {
+    background-color: #8200DB;
+}
+
+/* &investing */
+.invest-section .feature-icon {
+    color: #D08700;
+}
+
+.invest-section .num span {
+    color: #D08700;
+}
+
+.invest-section .icon {
+    background-color: #FEF9C2;
+    padding-right: 15px;
+    color: #D08700;
+}
+
+.invest-section .btn {
+    background-color: #D08700;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.invest-section .inner-2 .num {
+    bottom: -25px;
+    left: 500px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.invest-section .btn-main:hover {
+    background-color: #A65F00;
+}
+
+/* &renting */
+.commercial-section .feature-icon {
+    color: #4F39F6;
+}
+
+.commercial-section .num span {
+    color: #4F39F6;
+}
+
+.commercial-section .icon {
+    background-color: #E0E7FF;
+    padding-right: 15px;
+    color: #4F39F6;
+}
+
+.commercial-section .btn {
+    background-color: #4F39F6;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.commercial-section .btn-main:hover {
+    background-color: #432DD7;
+}
+
+/* *services section end */
+.test-bg {
+    background-color: #56178F;
+}
+
+/* *testimonials section start */
+.carousel i {
+    color: #FFB900;
+}
+
+.fqa h2 {
+    color: #7716F1;
+}
+
+/* *testimonials section end */
+/* *FAQ section start */
+.faq-accordion {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* *FAQ section end */
+
+/* *contact section start */
+/* ~icons color start */
+.first-icons {
+    background-color: #8741FF;
+}
+
+.info-panel {
+    background-color: var(--background-color);
+}
+
+.contact-icon {
+    background-color: #FFFFFF;
+}
+
+.fa-location-dot {
+    color: var(--main-color);
+}
+
+.fa-phone {
+    color: var(--hover-color);
+}
+
+.fa-envelope {
+    color: #E60076;
+}
+
+.fa-clock {
+    color: #4F39F6;
+}
+
+.connect {
+    background-color: #9514FB;
+}
+
+.icons i {
+    background-color: #AE60FD;
+
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+}
+
+.red-star {
+    color: red;
+}
+
+.message-form input,
+select,
+textarea:hover {
+    border-color: var(--main-color);
+    box-shadow: 1px 1px 7px 1px var(--main-color);
+}
+
+.form-check input:hover {
+    background-color: var(--hover-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.bg-main-color {
+    color: var(--main-color);
+}
+
+.pink-color {
+    color: #E60076;
+}
+
+.blue-color {
+    color: #432DDA;
+}
+
+.contact-card {
+    border: 1px solid gray;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+    box-shadow: 1px 1px 7px 1px gray;
+}
+
+.contact-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+    .first-icons {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+
+.contact-card .fa-location-dot {
+    background: linear-gradient(rgba(247, 6, 223, 0.944), rgb(245, 241, 18));
+}
+
+.form-card {
+    background-color: var(--background-color);
+    border: 1px solid gray;
+    box-shadow: 1px 1px 7px 1px gray;
+}
+
+/* ~icons color end */
+
+/* *contact section end */
+/* *fotter start */
+.fotter {
+    width: 100%;
+    background-color: var(--hover-color);
+}
+
+.right-footer i {
+    background-color: #6A2E98;
+    padding: 15px 20px;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.main-footer {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.right-footer i:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* *fotter end */
